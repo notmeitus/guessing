@@ -6,7 +6,17 @@ let b;
 function show(){
     a = document.getElementById("inputt").value;
     let contents = document.getElementById("display");
-   let content ="<table>";
+    let content ;
+    
+    while((a<3)||(a>9)){
+    
+      alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
+     
+        a =document.getElementById("reset").value;
+  
+    } 
+    
+        content +="<table>";
     for(let i=0;i<a;i++){
        array[i]=[];
        content += "<tr>";
@@ -25,6 +35,7 @@ function show(){
    content +="<a href = #display1 ><button onclick = set()>submit</button></a>";
 
    contents.innerHTML=content;
+
   
     
 } 
@@ -34,6 +45,10 @@ function set(){
     b=document.getElementById("set").value;
    // console.log(b);
    //swap
+   while(b<1||b>a){
+    alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
+    b=document.getElementById("rest").value;
+   }
    for(let i=0;i<a;i++){
     let temp = array[i][i];
     array[i][i]=array[i][b-1];
@@ -62,6 +77,10 @@ function set(){
 function result(){
     let c =document.getElementById("result").value;
    // console.log(c);
+   while(c<1||c>b){
+    alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
+     c=document.getElementById("rest").value;
+   }
    let d =document.getElementById("display2");
    let res ="<h1> your number is :</h1>";
    res +=`${array[c-1][c-1] }`;
