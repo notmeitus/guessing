@@ -1,31 +1,69 @@
-let array2D = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-];
-let arrayDisplay = document. getElementById("arrayDisplay");
-display();
+let a ;
+//console.log(a);
+let array = [];
+let v=10;
+let b;
+function show(){
+    a = document.getElementById("inputt").value;
+    let contents = document.getElementById("display");
+   let content ="<table>";
+    for(let i=0;i<a;i++){
+       array[i]=[];
+       content += "<tr>";
+      for(let j=0;j<a;j++){
+        array[i][j]=v;
+        content +=`<td> ${array[i][j]} </td>`;
+          v +=3;
+      }
+      content +="</tr>";
+    }
+    content +="</table>";
 
-    let input = document.getElementById("inputfield").value;
-    //swap
-     for(let i=0;i<array2D.length;i++){
-        let temp=array2D[i][i];
-        array2D[i][i]=array2D[i][input-1];
-        array2D[i][input-1]=temp;
-     }
-    //display
-    display();
+   content +=" <br><p>Plz! select <strong>Any number from above set & Enter its column number below..</strong></p>";
+   content +=" <p><strong>Note:</strong>Be careful ! while choosing column number of your <strong>number</strong></p>";
+   content +=" <input  type = number id=set  min =1 max = 9 size = 10 >";
+   content +="<a href = #display1 ><button onclick = set()>submit</button></a>";
 
-    function display(){
-        let htmlContent="<table>";
-            for(let i=0;i<array2D.length;i++){
-                htmlContent +="<tr>";
-                    for(let j=0;j<array2D[i].length;j++){
-                        htmlContent +=`<td>${array2D[i][j]}</td>`;
-                          
-                    }
-                    htmlContent +="</tr>";
-            }
-            htmlContent +="</table>";
-            arrayDisplay.innerHTML=htmlContent;
-        }
+   contents.innerHTML=content;
+  
+    
+} 
+
+
+function set(){
+    b=document.getElementById("set").value;
+   // console.log(b);
+   //swap
+   for(let i=0;i<a;i++){
+    let temp = array[i][i];
+    array[i][i]=array[i][b-1];
+    array[i][b-1]=temp;
+   }
+
+   let secs = document.getElementById("display1");
+   let sec ="<table>";
+    for(let i=0;i<a;i++){
+       sec += "<tr>";
+      for(let j=0;j<a;j++){
+        sec +=`<td> ${array[i][j]} </td>`;
+      }
+      sec +="</tr>";
+    }
+    sec +="</table>";
+    sec +=" <br><p> <strong>Again ! select your number from above set & Enter its column number below..</strong></p>";
+    sec +=" <input  type = number id=result  min =1 max = 9 size = 10 >";
+    sec +="<a href = #display2 ><button onclick = result()>submit</button></a>";
+
+
+   
+    secs.innerHTML = sec ;
+}
+
+function result(){
+    let c =document.getElementById("result").value;
+   // console.log(c);
+   let d =document.getElementById("display2");
+   let res ="<h1> your number is :</h1>";
+   res +=`${array[c-1][c-1] }`;
+   d.innerHTML= res ;
+}
