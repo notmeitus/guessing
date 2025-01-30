@@ -29,8 +29,8 @@ function show(){
     }
     content +="</table>";
 
-   content +=" <br><p>Plz! select <strong>Any number from above set & Enter its column number below..</strong></p>";
-   content +=" <p><strong>Note:</strong>Be careful ! while choosing column number of your <strong>number</strong></p>";
+   content +=" <br><p>Now,Plz! select <strong>Any number from above set & Enter its column number below..</strong></p>";
+   content +=" <p><strong>Note:</strong>Be careful ! while choosing <strong>Column Number</strong></p>";
    content +=" <input  type = number id=set  min =1 max = 9 size = 10 >";
    content +="<a href = #display1 ><button onclick = set()>submit</button></a>";
 
