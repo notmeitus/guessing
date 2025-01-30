@@ -6,7 +6,7 @@ let b;
 function show(){
     a = document.getElementById("inputt").value;
     let contents = document.getElementById("display");
-  
+    let content;
     
     while((a<3)||(a>9)){
     
@@ -16,7 +16,7 @@ function show(){
   
     } 
     
-     let content ="<table>";
+      content ="<table>";
     for(let i=0;i<a;i++){
        array[i]=[];
        content += "<tr>";
