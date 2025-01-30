@@ -76,7 +76,7 @@ function set(){
 function result(){
     let c =document.getElementById("result").value;
    // console.log(c);
-   while(c<1||c>b){
+   while(c<1||c>a){
     alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
      c=document.getElementById("rest").value;
    }
