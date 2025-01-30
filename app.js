@@ -12,7 +12,7 @@ function show(){
     
       alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
      
-        a =document.getElementById("reset").value;
+        a =document.getElementById("rest").value;
   
     } 
     
