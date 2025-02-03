@@ -84,4 +84,6 @@ function result(){
    let res ="<h1> your number is :</h1>";
    res +=`${array[c-1][c-1] }`;
    d.innerHTML= res ;
+    let e = document.getElementById("foot");
+   e.style.display = "block";
 }
