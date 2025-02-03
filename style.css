@@ -12,3 +12,17 @@ body{
 table{
     margin: auto;
 }
+footer{
+    background-color: black;
+    display: none;
+}
+#par{
+    background-color: black;
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
+#para{
+    background-color: black;
+    font-size: 0.7rem;
+    font-style: italic;
+}
