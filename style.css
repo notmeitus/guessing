@@ -26,3 +26,16 @@ footer{
     font-size: 0.6rem;
     font-style: italic;
 }
+.out{
+    display: flex; 
+    flex-direction: column;
+
+}
+.in{
+   
+    padding: 10px ;
+   
+}
+section{
+    box-shadow: 2px 2px 8px black;
+}
