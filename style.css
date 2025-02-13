@@ -36,6 +36,21 @@ footer{
     padding: 10px ;
    
 }
-section{
+.shadow{
     box-shadow: 2px 2px 8px black;
+    border-radius: 20px;
+   
 }
+#display{
+    padding: 20px;
+    display: none;
+}
+#display1{
+    padding: 20px;
+    display: none;
+}
+#display2{
+    padding: 20px;
+    display: none;
+}
+
