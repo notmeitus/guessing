@@ -44,7 +44,7 @@ function set(){
     b=document.getElementById("set").value;
    // console.log(b);
    //swap
-   while(b<1||b>a){
+   while((b<1)||(b>a)||(b>9)&&(b<a*10){
     alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
     b=document.getElementById("rest").value;
    }
@@ -77,7 +77,7 @@ function set(){
 function result(){
     let c =document.getElementById("result").value;
    // console.log(c);
-   while(c<1||c>a){
+   while((c<1)||(c>a)||(c>9)&&(c<a*10){
     alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
      c=document.getElementById("rest").value;
    }
