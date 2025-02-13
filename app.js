@@ -48,6 +48,7 @@ function set(){
     alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
     b=document.getElementById("rest").value;
    }
+    console.log(b);
    for(let i=0;i<a;i++){
     let temp = array[i][i];
     array[i][i]=array[i][b-1];
