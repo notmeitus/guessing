@@ -44,7 +44,7 @@ function set(){
     b=document.getElementById("set").value;
    // console.log(b);
    //swap
-   while((b<1)||(b>a)||(b>9)&&(b<a*10000000000)){
+   while((b<1)||(b>a)||(b>9)&&(b<a*1000000000)){
     alert("OOPS!! YOU ARE ENTERED WRONG CHOICE ,plz enter right one");
     b=document.getElementById("rest").value;
    }
