@@ -34,6 +34,7 @@ function show(){
    content +="<a href = #display1 ><button onclick = set()>submit</button></a>";
 
    contents.innerHTML=content;
+    contents.style.display="block";
 
   
     
@@ -72,6 +73,7 @@ function set(){
 
    
     secs.innerHTML = sec ;
+    secs.style.display="block";
 }
 
 function result(){
@@ -87,4 +89,5 @@ function result(){
    d.innerHTML= res ;
     let e = document.getElementById("foot");
    e.style.display = "block";
+    d.style.display="block";
 }
