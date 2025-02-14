@@ -30,7 +30,7 @@ function show(){
     content +="</table>";
 
    content +=" <br><p>Now,Plz! select <strong>Any number from above set & Enter it's column number below..</strong></p>";
-   content +=" <input  type = number id=set  >";
+   content +=" <input  type = number id=set  size=10 >";
    content +="<a href = #display1 ><button onclick = set()>submit</button></a>";
 
    contents.innerHTML=content;
@@ -67,7 +67,7 @@ function set(){
     }
     sec +="</table>";
     sec +=" <br><p> <strong>Check! your number's column from above set & enter again.</strong></p>";
-    sec +=" <input  type = number id=result >";
+    sec +=" <input  type = number id=result size=10 >";
     sec +="<a href = #display2 ><button onclick = result()>submit</button></a>";
 
 
